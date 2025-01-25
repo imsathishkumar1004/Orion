@@ -7,7 +7,7 @@ const AboutUs = () => {
       <div className="about-content">
         <div className="about-image">
           <img
-            src="/public/assets/About.jpg" 
+            src="https://drive.google.com/file/d/1ZiqcseoQpm5SdcqlxxkRgwn_rKMXDT8R/view?usp=drive_link" 
             alt="About Us"
           />
         </div>
