@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+  }
+  
+  .gear {
+    width: 200px;
+    height: 200px;
+    border: 10px solid gray;
+    border-radius: 50%;
+    position: relative;
+    margin: 20px;
+    display: inline-block;
+    transform: rotate(0deg);
+    animation: spin 10s infinite linear;
+  }
+  
+  .gear:before,
+  .gear:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border: 10px solid gray;
+    border-radius: 50%;
+    animation: spin 10s infinite linear reverse;
+  }
+  
+  .gear-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 1.5rem;
+    color: white;
+    font-family: "Arial", sans-serif;
+    font-weight: bold;
+  }
+  
+  .gear-link {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  @keyframes spin {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  

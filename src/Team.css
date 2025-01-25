@@ -1,0 +1,182 @@
+/* General Container */
+.team-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  margin: 20px 0;
+}
+
+/* Staff Card */
+.staff-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f4e7d7;
+  color: #2b2b2b;
+  padding: 30px;
+  border-radius: 20px;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+  animation: fadeIn 1s ease-in-out;
+  position: relative;
+}
+
+.staff-card::before {
+  content: "Staff Coordinator";
+  position: absolute;
+  top: -10px;
+  background-color: #f0a500;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 15px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.staff-image-container {
+  margin-bottom: 20px;
+  animation: slideDown 1s ease-out forwards;
+}
+
+.staff-image {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: 5px solid #f0a500;
+  object-fit: cover;
+  animation: bounceIn 1s ease;
+}
+
+.staff-name {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.staff-description {
+  font-size: 1.1rem;
+  margin: 5px 0;
+  text-align: center;
+}
+
+.staff-contact {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #353432;
+  margin-top: 10px;
+}
+
+/* Coordinators Section */
+.team-cards {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.team-card {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  border-radius: 15px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transform: scale(0.9);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: slideUp 0.8s ease-out forwards;
+}
+
+/* Card hover animation */
+.team-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(240, 165, 0, 0.7);
+}
+
+/* Image hover animation */
+.team-image-container:hover .team-image {
+  transform: scale(1.2);
+  box-shadow: 0 4px 10px rgba(240, 165, 0, 0.6);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.team-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 10%;
+  object-fit: cover;
+  border: 3px solid #f0a500;
+}
+
+.team-name {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+.team-description {
+  font-size: 1rem;
+  margin: 10px 0;
+}
+
+.team-contact {
+  font-size: 1rem;
+  margin: 10px 0;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.8);
+    opacity: 0.5;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
