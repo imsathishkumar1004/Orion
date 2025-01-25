@@ -1,30 +1,13 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import "./Event.css";
+import eventCategories from "./eventCategories.json"; // Import JSON
 
 const Event = () => {
   const navigate = useNavigate();
 
-  const eventCategories = [
-    {
-      title: "TECH",
-      description: "Explore our technical events.",
-      image: "/src/assets/Tech.jpg", // Replace with the actual path to the image
-      link: "/technical",
-    },
-    {
-      title: "NON TECH",
-      description: "Dive into our non-technical events.",
-      image: "/src/assets/Non-Tech.jpg", // Replace with the actual path to the image
-      link: "/non-technical",
-    },
-  ];
-
   const renderCategoryCard = (category) => (
-    <div
-      className="event-card"
-      key={category.title}
-    >
+    <div className="event-card" key={category.title}>
       <img src={category.image} alt={category.title} className="event-image" />
       <h3>{category.title}</h3>
       <p>{category.description}</p>
