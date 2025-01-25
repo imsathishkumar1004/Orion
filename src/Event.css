@@ -1,0 +1,64 @@
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.gear-icon {
+  position: absolute;
+  top: 20px;
+  left: 20px;  
+  width: 50px;
+  height: 50px;
+  background: url('/src/assets/gear-icon.png') no-repeat center center;
+  background-size: contain;
+  animation: spin 4s linear infinite; 
+}
+
+.event-container {
+  text-align: center;
+  padding: 20px;
+  background-color: black;
+  color: white;
+  min-height: 60vh;
+  position: relative; 
+}
+
+.event-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.event-card {
+  background-color: #222;
+  border: 2px solid #555;
+  border-radius: 10px;
+  width: 250px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  padding: 20px;
+}
+
+.event-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.event-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
