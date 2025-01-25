@@ -1,8 +1,20 @@
 {
-  "name": "orion",
-  "private": true,
+  "name": "4",
   "version": "0.0.0",
+  "private": true,
+  "description": "This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.",
+  "homepage": "https://github.com/imsathishkumar1004/Orion#readme",
+  "bugs": {
+    "url": "https://github.com/imsathishkumar1004/Orion/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/imsathishkumar1004/Orion.git"
+  },
+  "license": "ISC",
+  "author": "",
   "type": "module",
+  "main": "eslint.config.js",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
