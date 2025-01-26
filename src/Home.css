@@ -19,11 +19,15 @@
 .home-container .kec {
   font-size: 2rem;
   font-weight: bold;
-  font-family: 'Poppins', sans-serif; /* Rugged, bold font */
+  font-family: 'Poppins', sans-serif;
   text-transform: uppercase;
-  letter-spacing: 2px; /* Added spacing for better look */
-  color: #fafafa; /* Golden color for logo */
+  letter-spacing: 2px;
+  color: #fafafa; /* Default golden color */
   transition: transform 0.3s ease-in-out;
+}
+
+.kec.dark, .fade-in.dark {
+  color: #000000; /* Black text for dark mode */
 }
 
 /* Wave Effect */
