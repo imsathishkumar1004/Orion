@@ -40,7 +40,7 @@ const Home = () => {
 
       {/* Home Section */}
       <div className="home-container" id="home">
-        <h3 className="fade-in" >KONGU ENGINEERING COLLEGE</h3>
+        <h3 className="fade-in" style={{ fontFamily: 'Orbitron, sans-serif' }} >KONGU ENGINEERING COLLEGE</h3>
         <h1 className="orion-text">ORION 2K25</h1>
         <h3 className="fade-in" >DEPARTMENT OF COMPUTER APPLICATIONS</h3>
         <p className="fade-in" style={{ fontFamily: 'Orbitron, sans-serif' }}>Your one-stop platform for events, teams, and more!</p>
