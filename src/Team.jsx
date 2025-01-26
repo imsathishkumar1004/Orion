@@ -10,13 +10,13 @@ const staffCoordinator = {
 
 const teamMembers = [
   {
-    name: "Jeysaravanan",
+    name: "JEYSARAVANAN S",
     description: "Secretary",
     contact: "+91 91593 22662",
     image: "/assets/Jey.png", 
   },
   {
-    name: "Thenmalar T",
+    name: "THENMALAR T",
     description: "Additional secretary",
     contact: "+91 93856 98235",
     image: "/assets/then.png", 
@@ -28,7 +28,7 @@ const teamMembers = [
     image: "/assets/vikash.png", 
   },
   {
-    name: "Divisha",
+    name: "DIVISHA S",
     description: "Treasurer",
     contact: "+91 73977 46261",
     image: "/assets/divisha.png", 
