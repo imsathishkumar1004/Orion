@@ -16,7 +16,7 @@
   overflow: visible;
 }
 
-.home-container .kec {
+.home-container, #kec {
   font-size: 2rem;
   font-weight: bold;
   font-family: 'Poppins', sans-serif;
