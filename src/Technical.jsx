@@ -19,7 +19,7 @@ const technicalEvents = [
   {
     title: "Quiz",
     description:
-      "Compete in solving complex coding problems to test your logical and analytical thinking.Test your knowledge and quick thinking in our thrilling Quiz Challenge! Answer brain-teasing questions, showcase your expertise, and compete to prove you're the ultimate quiz master!",
+      "Test your logical and analytical skills in our thrilling Quiz Challenge! Answer brain-teasing questions, showcase your expertise, and compete to be the ultimate quiz master!",
     image: "/assets/Quiz.jpg",
     pdfUrl: "/assets/QUIZ_rules.pdf",
   },
