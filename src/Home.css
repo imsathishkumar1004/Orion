@@ -6,7 +6,7 @@
 .home-container {
   text-align: center;
   padding: 50px 20px;
-  color: #ffffff;
+  color: #000000;
   min-height: 70vh;
   display: flex;
   flex-direction: column;
@@ -19,10 +19,10 @@
 .home-container .kec {
   font-size: 2rem;
   font-weight: bold;
-  font-family: 'Bangers', sans-serif; /* Rugged, bold font */
+  font-family: 'Poppins', sans-serif; /* Rugged, bold font */
   text-transform: uppercase;
   letter-spacing: 2px; /* Added spacing for better look */
-  color: #f0a500; /* Golden color for logo */
+  color: #fafafa; /* Golden color for logo */
   transition: transform 0.3s ease-in-out;
 }
 
@@ -50,6 +50,7 @@
 .home-container h3 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.2rem;
+  color: #fafafa;
   margin-bottom: 10px;
 }
 
@@ -239,6 +240,16 @@
 }
 
 .event-image {
-  max-width: 30%;
+  width: auto; /* Keep the original size on larger screens */
+  max-width: 30%; /* For larger screens, set a max-width */
   height: auto;
+  object-fit: contain; /* Ensures the image maintains its aspect ratio */
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+  .event-image {
+    width: 80%; /* Adjust width for mobile view */
+    max-width: none; /* Disable max-width for mobile */
+  }
 }
