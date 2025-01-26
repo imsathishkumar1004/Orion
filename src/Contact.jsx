@@ -35,8 +35,12 @@ const Contact = () => {
           <p> MBA & MCA Block</p>
           <p>Kongu Engineering College</p>
           <p>Perundurai - 638060</p>
-          <p>Email: mca@kongu.edu</p>
-          <p>Phone: +91 91593 22662</p>
+          <p>Email: orion@kongu.ac.in</p>
+          <p>Phone: 
+            <br />+91 91593 22662
+            <br /> +91 93856 98235
+            <br /> +91 63815 44729
+          </p>
         </div>
       </div>
     </div>
