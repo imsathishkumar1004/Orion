@@ -21,7 +21,7 @@
 .home-container .kec {
   font-size: 2rem;
   font-weight: bold;
-  font-family: 'Poppins', sans-serif; /* Rugged, bold font */
+  font-family:  sans-serif; /* Rugged, bold font */
   text-transform: uppercase;
   letter-spacing: 2px; /* Added spacing for better look */
   color: #fafafa; /* Golden color for logo */
@@ -50,7 +50,7 @@
 }
 
 .home-container h3 {
-  font-family: 'Cinzel', serif; /* Elegant font style */
+  font-family:  serif; /* Elegant font style */
   font-size: 1.8rem; /* Slightly larger for emphasis */
   color: #ffffff; /* Golden tone for a premium look */
   text-transform: uppercase; /* Keep it in uppercase for uniformity */
@@ -60,7 +60,7 @@
 
 
 .home-container p {
-  font-size: 1rem;
+  font-size: 1.5rem;
   margin-bottom: 20px;
   color: #f0f0f0;
   animation: fade-in 2s ease-in-out;
@@ -293,7 +293,7 @@
   height: 100%;
   object-fit: cover;
   z-index: -1; /* Ensure the video stays behind the content */
-  opacity: 0.6; /* Reduced opacity for better contrast */
+  opacity: 1; /* Reduced opacity for better contrast */
 }
 
 /* Ensure the home container has a transparent background */
