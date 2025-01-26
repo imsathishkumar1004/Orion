@@ -1,23 +1,9 @@
 .about-container {
   display: flex;
-  flex-direction: column;  /* Align items in a column (top to bottom) */
   justify-content: center;
   align-items: center;
   padding: 50px 20px;
   background-color: #171414;
-}
-
-.centered-image-container {
-  display: flex;
-  justify-content: center; /* Horizontally center the image */
-  align-items: center;     /* Vertically center the image */
-  width: 50%;             /* Ensure the container takes up full width */
-  margin-bottom: 30px;     /* Space below the image */
-}
-
-.centered-image {
-  max-width: 160%; /* Adjust the image size */
-  height: auto;
 }
 
 .about-content {
@@ -25,7 +11,6 @@
   flex-wrap: wrap;
   max-width: 1200px;
   gap: 30px;
-  justify-content: center; /* Center the content below the image */
 }
 
 .about-image img {
@@ -82,3 +67,5 @@
     padding: 20px 10px;
   }
 }
+
+
