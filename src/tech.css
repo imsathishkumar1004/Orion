@@ -1,3 +1,4 @@
+/* Event Container Styles */
 .event-container {
   text-align: center;
   padding: 50px 20px;
@@ -10,6 +11,7 @@
   margin-bottom: 30px;
 }
 
+/* Event Cards Styles */
 .event-cards {
   display: flex;
   justify-content: center;
@@ -29,15 +31,18 @@
   text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* Ensure content is spaced evenly */
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
 }
 
+/* Hover Effect */
 .event-card:hover {
   transform: translateY(-5px);
   border-color: #ffd700; /* Gold outline on hover */
   box-shadow: 0 8px 12px rgba(255, 215, 0, 0.7); /* Golden glow */
 }
 
+/* Image Styles */
 .event-card img {
   width: 100%;
   height: 200px; /* Static height for images */
@@ -45,14 +50,18 @@
   display: block;
   border-radius: 10px;
   margin-bottom: 15px;
+  max-width: 100%; /* Ensure the image doesn't overflow */
+  max-height: 100%; /* Ensure the image stays within the card */
 }
 
+/* Title Styles */
 .event-card h3 {
   font-size: 1.5rem;
   margin-bottom: 10px;
   color: #ffd700; /* Golden title color */
 }
 
+/* Description Styles */
 .event-card p {
   font-size: 1rem;
   color: #ccc; /* Light grey text */
@@ -60,6 +69,7 @@
   flex-grow: 1; /* Ensures description takes available space */
 }
 
+/* Read More Link Styles */
 .read-more-link {
   font-size: 1rem;
   color: #ffd700; /* Gold link color */
