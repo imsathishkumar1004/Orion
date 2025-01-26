@@ -39,10 +39,15 @@ const Home = () => {
     <div>
       {/* Home Section */}
       <div className="home-container" id="home">
-        <h3 className={`kec ${isDarkMode ? 'dark' : ''}`}>KONGU ENGINEERING COLLEGE</h3>
-        <h1 className="orion-text">ORION 2K25</h1>
-        <h3 className={`fade-in ${isDarkMode ? 'dark' : ''}`}>DEPARTMENT OF COMPUTER APPLICATIONS</h3>
-        <p className={`fade-in ${isDarkMode ? 'dark' : ''}`}>Your one-stop platform for events, teams, and more!</p>
+        <h3 id={`kec ${isDarkMode ? 'dark' : ''}`}>KONGU ENGINEERING COLLEGE</h3>
+        <h1 className="orion-text" id={`kec ${isDarkMode ? 'dark' : ''}`}>ORION 2K25</h1 >
+        <h3 className={`fade-in ${isDarkMode ? 'dark' : ''}`} id={`kec ${isDarkMode ? 'dark' : ''}`}>
+  DEPARTMENT OF COMPUTER APPLICATIONS
+</h3>
+<p className={`fade-in ${isDarkMode ? 'dark' : ''}`} id={`kec ${isDarkMode ? 'dark' : ''}`}>
+  Your one-stop platform for events, teams, and more!
+</p>
+
 
         {/* Add Image above Countdown Section */}
         <div className="image-container">
