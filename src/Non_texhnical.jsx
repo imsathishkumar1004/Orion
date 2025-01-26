@@ -10,9 +10,9 @@ const nonTechnicalEvents = [
     pdfUrl: "/assets/TALENTSHOW_rules.pdf", // PDF link for Talent Show
   },
   {
-    title: "Triple Drouble",
+    title: "Triple Trouble",
     description:
-      "Participate in the exciting Triple Drouble event. Engage in fun challenges and team games to test your skills and creativity.",
+      "Participate in the exciting Triple Trouble event. Engage in fun challenges and team games to test your skills and creativity.",
     image: "/assets/Triple.jpg",
     pdfUrl: "/assets/TRIPLE_TROUBLE_rules.pdf", // PDF link for Triple Trowble
   },
