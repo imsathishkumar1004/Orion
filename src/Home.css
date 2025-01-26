@@ -257,3 +257,13 @@
     max-width: none; /* Disable max-width for mobile */
   }
 }
+
+/* Default (light mode) styling */
+.fade-in {
+  color: #000000; /* Black font for light mode */
+}
+
+/* Dark mode styling */
+.fade-in.dark {
+  color: #ffffff; /* White font for dark mode */
+}
