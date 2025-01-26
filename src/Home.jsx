@@ -32,51 +32,61 @@ const Home = () => {
 
   return (
     <div>
-      {/* Home Section */}
-      <div className="home-container" id="home">
-        <h3 className="fade-in">KONGU ENGINEERING COLLEGE</h3>
-        <h1 className="orion-text">ORION 2K25</h1>
-        <h3 className="fade-in">MASTER OF COMPUTER APPLICATIONS</h3>
-        <p className="fade-in">Your one-stop platform for events, teams, and more!</p>
+  {/* Home Section */}
+  <div className="home-container" id="home">
+    <h3 className="kec" >KONGU ENGINEERING COLLEGE</h3>
+    <h1 className="orion-text">ORION 2K25</h1>
+    <h3 className="fade-in">DEPARTMENT OF COMPUTER APPLICATIONS</h3>
+    <p className="fade-in">Your one-stop platform for events, teams, and more!</p>
 
-        {/* Countdown Section */}
-        <div className="countdown">
-          <h2>Registration Ends In:</h2>
-          <div className="timer">
-            <div>{timeLeft.days} Days</div>
-            <div>{timeLeft.hours} Hours</div>
-            <div>{timeLeft.minutes} Minutes</div>
-            <div>{timeLeft.seconds} Seconds</div>
-          </div>
-          <br />
-          <br />
-          {/* Register Now Button */}
-          <a
-            href="https://forms.gle/5dFzrg5HLzaA17q18"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="explore-button bounce"
-          >
-            Register Now
-          </a>
-        </div>
-      </div>
-
-      {/* Events Section */}
-      <div className="section" id="events">
-        <Event />
-      </div>
-
-      {/* About Section */}
-      <div className="section" id="about">
-        <About />
-      </div>
-
-      {/* Contact Section */}
-      <div className="section" id="contact">
-        <Contact />
-      </div>
+    {/* Add Image above Countdown Section */}
+    <div className="image-container">
+      <img
+        src="/assets/orion.png" // Add the image URL here
+        alt="Orion Event"
+        className="event-image"
+      />
     </div>
+
+    {/* Countdown Section */}
+    <div className="countdown">
+      <h2>Registration Ends In:</h2>
+      <div className="timer">
+        <div>{timeLeft.days} Days</div>
+        <div>{timeLeft.hours} Hours</div>
+        <div>{timeLeft.minutes} Minutes</div>
+        <div>{timeLeft.seconds} Seconds</div>
+      </div>
+      <br />
+      <br />
+      {/* Register Now Button */}
+      <a
+        href="https://forms.gle/5dFzrg5HLzaA17q18"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="explore-button bounce"
+      >
+        Register Now
+      </a>
+    </div>
+  </div>
+
+  {/* Events Section */}
+  <div className="section" id="events">
+    <Event />
+  </div>
+
+  {/* About Section */}
+  <div className="section" id="about">
+    <About />
+  </div>
+
+  {/* Contact Section */}
+  <div className="section" id="contact">
+    <Contact />
+  </div>
+</div>
+
   );
 };
 
