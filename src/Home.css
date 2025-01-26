@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
 
 /* General Styling */
 .home-container {
   text-align: center;
   padding: 50px 20px;
-  color: #ffffff;
+  color: #000000;
   min-height: 70vh;
   display: flex;
   flex-direction: column;
@@ -16,7 +16,15 @@
   overflow: visible;
 }
 
-
+.home-container .kec {
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif; /* Rugged, bold font */
+  text-transform: uppercase;
+  letter-spacing: 2px; /* Added spacing for better look */
+  color: #fafafa; /* Golden color for logo */
+  transition: transform 0.3s ease-in-out;
+}
 
 /* Wave Effect */
 .home-container::before {
@@ -40,22 +48,18 @@
 }
 
 .home-container h3 {
-  font-family: 'Lobster', cursive; /* Stylish, cursive font */
-  font-size: 1.8rem; /* Slightly larger size for prominence */
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2rem;
+  color: #fafafa;
   margin-bottom: 10px;
-  text-shadow: 2px 2px 5px black; /* Black shadow for depth */
 }
 
 .home-container p {
-  font-family: 'Montserrat', sans-serif; /* Modern, sans-serif font */
-  font-size: 1.3rem; /* Slightly larger size */
+  font-size: 1rem;
   margin-bottom: 20px;
   color: #f0f0f0;
-  text-shadow: 5px 2px 5px black; /* Adding black shadow */
   animation: fade-in 2s ease-in-out;
 }
-
-
 
 /* Button Styles */
 .explore-button {
@@ -236,6 +240,17 @@
 }
 
 .event-image {
-  max-width: 30%;
+  width: auto; /* Keep the original size on larger screens */
+  max-width: 30%; /* For larger screens, set a max-width */
   height: auto;
+  object-fit: contain; /* Ensures the image maintains its aspect ratio */
 }
+
+/* Mobile View */
+@media (max-width: 768px) {
+  .event-image {
+    width: 80%; /* Adjust width for mobile view */
+    max-width: none; /* Disable max-width for mobile */
+  }
+}
+
