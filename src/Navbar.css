@@ -1,6 +1,6 @@
 /* Navbar container */
 @import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500&display=swap'); /* Import Bubble Font */
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500&display=swap'); 
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -9,10 +9,11 @@
   color: white;
   padding: 15px 30px;
   position: relative;
-  z-index: 1000; /* Ensure it stays above other elements */
+  z-index: 1000;
   transition: all 0.3s ease-in-out;
 }
 
+/* Navbar logo */
 /* Navbar logo with Rugged Font */
 .navbar-logo {
   font-size: 2rem;
@@ -36,32 +37,29 @@
 .navbar-links li {
   margin: 0 25px;
   position: relative;
-  animation: fadeIn 1s ease-in-out infinite alternate; /* Infinite animation added */
-  animation-delay: calc(0.2s * var(--i));
 }
 
-/* Navbar link styling with Bubble Font */
-.navbar-links a,
-.navbar-links a:visited {
+/* Navbar link styling */
+.navbar-links a {
   color: white;
   text-decoration: none;
   font-size: 1.2rem;
-  font-family: 'Baloo 2', cursive; /* Bubble Font applied */
+  font-family: 'Baloo 2', cursive;
   padding: 10px 0;
-  transition: color 0.3s ease, transform 0.3s ease; /* Smooth color and scale effect */
+  transition: color 0.3s ease, transform 0.3s ease;
 }
 
 /* Navbar link hover effect */
 .navbar-links a:hover {
   color: #f0a500;
-  transform: scale(1.1); /* Slightly increase size on hover */
+  transform: scale(1.1);
 }
 
 /* Dropdown menu styling */
 .dropdown {
   display: block;
   position: absolute;
-  top: 100%; /* Align directly below the parent */
+  top: 100%;
   left: 0;
   background-color: #444;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
@@ -79,49 +77,17 @@
   visibility: visible;
 }
 
-/* Dropdown list */
-.dropdown ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
 /* Dropdown items */
 .dropdown ul li {
   padding: 12px 20px;
   text-align: left;
   color: white;
-  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth effect added */
-}
-
-.dropdown ul li a {
-  color: white;
-  text-decoration: none;
-  font-size: 1rem;
 }
 
 .dropdown ul li:hover {
   background-color: #333;
-  transform: scale(1.05); /* Slight scaling for hover effect */
+  transform: scale(1.05);
 }
-
-/* Fade-in animation for navbar links */
-@keyframes fadeIn {
-  0% {
-    opacity: 0.5;
-    transform: translateY(10px); /* Starts slightly lower */
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0); /* Moves back to the original position */
-  }
-}
-
-/* Staggered animation delay for navbar links */
-.navbar-links li:nth-child(1) { --i: 1; }
-.navbar-links li:nth-child(2) { --i: 2; }
-.navbar-links li:nth-child(3) { --i: 3; }
-.navbar-links li:nth-child(4) { --i: 4; }
 
 /* Mobile menu button */
 .mobile-menu {
@@ -136,13 +102,12 @@
   height: 4px;
   background-color: white;
   margin: 4px 0;
-  transition: transform 0.3s ease-in-out;
 }
 
 /* Show mobile menu button on small screens */
 @media (max-width: 768px) {
   .navbar-links {
-    display: none; /* Hide links on mobile */
+    display: none;
     flex-direction: column;
     width: 100%;
     position: absolute;
@@ -153,10 +118,10 @@
   }
 
   .navbar-links.active {
-    display: flex; /* Show menu when active */
+    display: flex;
   }
 
   .mobile-menu {
-    display: flex; /* Show hamburger button on small screens */
+    display: flex;
   }
 }
