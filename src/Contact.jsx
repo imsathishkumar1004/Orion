@@ -1,5 +1,5 @@
 import React from "react";
-import { FaInstagram, FaFacebook } from "react-icons/fa";
+import { FaInstagram, FaGlobe } from "react-icons/fa"; // Updated import
 import "./Contact.css";
 
 const Contact = () => {
@@ -11,7 +11,7 @@ const Contact = () => {
           <h2>Follow Us</h2>
           <div className="social-icons">
             <a
-              href="https://www.instagram.com"
+              href="https://www.instagram.com/mca_kec_?igsh=OWo4YnhpbmM2NGZz"
               target="_blank"
               rel="noopener noreferrer"
               className="icon-link"
@@ -19,12 +19,12 @@ const Contact = () => {
               <FaInstagram className="social-icon" />
             </a>
             <a
-              href="https://www.facebook.com"
+              href="https://orion.kongu.edu"
               target="_blank"
               rel="noopener noreferrer"
               className="icon-link"
             >
-              <FaFacebook className="social-icon" />
+              <FaGlobe className="social-icon" /> {/* Updated icon */}
             </a>
           </div>
         </div>
