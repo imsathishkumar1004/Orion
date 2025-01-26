@@ -10,9 +10,9 @@ const technicalEvents = [
     pdfUrl: "/assets/PAPER_PRESENTATION_rules.pdf",
   },
   {
-    title: "Debugging",
+    title: "Coding Contest",
     description:
-      "Dive into the intricate world of code and logic with our Debugging Challenge. Hone your problem-solving skills as you uncover hidden errors and optimize solutions. Explore the thrill of turning chaos into clarity, one bug at a time!",
+      "Test your programming skills by solving fun challenges. Compete with others and see how fast you can code your way to the top!",
     image: "/assets/code.jpg",
     pdfUrl: "/assets/CODING_CONTEST_rules.pdf",
   },
