@@ -12,21 +12,21 @@ const technicalEvents = [
   {
     title: "Debugging",
     description:
-      "Embark on a journey into a captivating world of designs with our pixel perfection. Explore Software: Adobe Photoshop, Adobe Illustrator.",
+      "Dive into the intricate world of code and logic with our Debugging Challenge. Hone your problem-solving skills as you uncover hidden errors and optimize solutions. Explore the thrill of turning chaos into clarity, one bug at a time!",
     image: "/assets/code.jpg",
     pdfUrl: "/assets/CODING_CONTEST_rules.pdf",
   },
   {
     title: "Quiz",
     description:
-      "Compete in solving complex coding problems to test your logical and analytical thinking.",
+      "Compete in solving complex coding problems to test your logical and analytical thinking.Test your knowledge and quick thinking in our thrilling Quiz Challenge! Answer brain-teasing questions, showcase your expertise, and compete to prove you're the ultimate quiz master!",
     image: "/assets/Quiz.jpg",
     pdfUrl: "/assets/QUIZ_rules.pdf",
   },
   {
     title: "Logo Creation",
     description:
-      "Test your technical knowledge in a fun and engaging quiz format.",
+      "Unleash your creativity and design skills in our Logo Creation event! Craft unique and innovative logos that capture attention and leave a lasting impression.",
     image: "/assets/graphic.png",
     pdfUrl: "/assets/LOGO_CREATION_rules.pdf",
   },
