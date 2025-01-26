@@ -12,14 +12,14 @@
   justify-content: space-between;
   align-items: flex-start;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 50px;
   animation: fadeInUp 1s ease-out forwards; /* Apply fade-in animation */
 }
 
 .contact-left,
 .contact-right {
-  flex: 1;
-  max-width: 400px;
+  flex: 1; /* Allow both sides to take equal space */
+  max-width: 1000px; /* Increase max-width to 1000px for both sections */
   opacity: 0; /* Start as invisible */
   animation: fadeInUp 1s ease-out forwards; /* Animation for each section */
 }
@@ -34,7 +34,7 @@
 
 .contact-left h2,
 .contact-right h2 {
-  font-size: 1.8rem;
+  font-size: 2rem; /* Increased font size */
   margin-bottom: 20px;
   color: #333;
 }
@@ -46,7 +46,7 @@
 
 .icon-link {
   color: #555;
-  font-size: 2rem;
+  font-size: 2.5rem; /* Increased icon size */
   transition: color 0.3s;
 }
 
@@ -55,10 +55,10 @@
 }
 
 .contact-right p {
-  font-size: 1rem;
+  font-size: 1.2rem; /* Slightly larger text size */
   color: #555;
   margin-bottom: 10px;
-  line-height: 1.6;
+  line-height: 1.2;
 }
 
 /* Define the fade-in-up animation */
