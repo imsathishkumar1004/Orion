@@ -6,7 +6,6 @@ import "./Home.css";
 
 const Home = () => {
   const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
-  const [isDarkMode, setIsDarkMode] = useState(false); // state for dark mode
 
   useEffect(() => {
     const targetDate = new Date("2025-02-13T00:00:00").getTime();
@@ -28,26 +27,30 @@ const Home = () => {
       }
     }, 1000);
 
-    // Check for dark mode preference on initial render
-    const darkModePreference = window.matchMedia("(prefers-color-scheme: dark)").matches;
-    setIsDarkMode(darkModePreference);
-
     return () => clearInterval(interval);
+  }, []);
+
+  useEffect(() => {
+    const updateTextColor = () => {
+      const isDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches;
+      document.documentElement.style.setProperty("--text-color", isDarkMode ? "#ffffff" : "#000000");
+    };
+
+    updateTextColor();
+    window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", updateTextColor);
+
+    return () =>
+      window.matchMedia("(prefers-color-scheme: dark)").removeEventListener("change", updateTextColor);
   }, []);
 
   return (
     <div>
       {/* Home Section */}
       <div className="home-container" id="home">
-        <h3 id={`kec ${isDarkMode ? 'dark' : ''}`}>KONGU ENGINEERING COLLEGE</h3>
-        <h1 className="orion-text" id={`kec ${isDarkMode ? 'dark' : ''}`}>ORION 2K25</h1 >
-        <h3 className={`fade-in ${isDarkMode ? 'dark' : ''}`} id={`kec ${isDarkMode ? 'dark' : ''}`}>
-  DEPARTMENT OF COMPUTER APPLICATIONS
-</h3>
-<p className={`fade-in ${isDarkMode ? 'dark' : ''}`} id={`kec ${isDarkMode ? 'dark' : ''}`}>
-  Your one-stop platform for events, teams, and more!
-</p>
-
+        <h3 className="fade-in">KONGU ENGINEERING COLLEGE</h3>
+        <h1 className="orion-text">ORION 2K25</h1>
+        <h3 className="fade-in">DEPARTMENT OF COMPUTER APPLICATIONS</h3>
+        <p className="fade-in">Your one-stop platform for events, teams, and more!</p>
 
         {/* Add Image above Countdown Section */}
         <div className="image-container">
