@@ -8,13 +8,13 @@ const Event = () => {
   const eventCategories = [
     {
       title: "TECH",
-      description: "Explore our technical events.",
+      description: "Technical events provide a platform to showcase skills, tackle challenges, and push the boundaries of innovation. It's an opportunity to apply knowledge, solve problems, and let expertise shine.",
       image: "/assets/Tech.jpg", // Replace with the actual path to the image
       link: "/technical",
     },
     {
       title: "NON TECH",
-      description: "Dive into our non-technical events.",
+      description: "Non-technical events offer a stage to showcase creativity, explore talents, and embrace the joy of expression. It's an opportunity to connect, perform, and let your passion shine.",
       image: "/assets/Non-Tech.jpg", // Replace with the actual path to the image
       link: "/non-technical",
     },
