@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
 
 /* General Styling */
 .home-container {
@@ -15,18 +16,28 @@
   overflow: visible;
 }
 
+.home-container .kec {
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: 'Bangers', sans-serif; /* Rugged, bold font */
+  text-transform: uppercase;
+  letter-spacing: 2px; /* Added spacing for better look */
+  color: #f0a500; /* Golden color for logo */
+  transition: transform 0.3s ease-in-out;
+}
+
 /* Wave Effect */
 .home-container::before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 200%;
-  background: radial-gradient(circle, rgba(80, 0, 76, 0.803) 0%, transparent 70%);
-  animation: wave 6s infinite linear;
+  width: 80%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(80, 0, 76, 0.803) 0%, transparent 90%);
+  animation: wave 4s infinite linear;
   transform: rotate(-45deg);
-  z-index: -1;
+  z-index: -10;
 }
 
 /* Heading Styles */
@@ -219,4 +230,15 @@
     font-size: 2.5rem;
     letter-spacing: 5px;
   }
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.event-image {
+  max-width: 30%;
+  height: auto;
 }
