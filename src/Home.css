@@ -22,12 +22,12 @@
   font-family: 'Poppins', sans-serif;
   text-transform: uppercase;
   letter-spacing: 2px;
-  color: #000000; /* Default golden color */
+  color: #fafafa; /* Default golden color */
   transition: transform 0.3s ease-in-out;
 }
 
 .kec.dark, .fade-in.dark {
-  color: #ffffff; /* Black text for dark mode */
+  color: #0d0d0d; /* Black text for dark mode */
 }
 
 /* Wave Effect */
