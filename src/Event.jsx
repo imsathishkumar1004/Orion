@@ -9,13 +9,13 @@ const Event = () => {
     {
       title: "TECH",
       description: "Explore our technical events.",
-      image: "/public/assets/Tech.jpg", // Replace with the actual path to the image
+      image: "/assets/Tech.jpg", // Replace with the actual path to the image
       link: "/technical",
     },
     {
       title: "NON TECH",
       description: "Dive into our non-technical events.",
-      image: "/public/assets/Non-Tech.jpg", // Replace with the actual path to the image
+      image: "/assets/Non-Tech.jpg", // Replace with the actual path to the image
       link: "/non-technical",
     },
   ];
